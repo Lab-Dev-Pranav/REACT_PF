@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -18,17 +18,17 @@ const Footer = () => {
         {/* LINKS */}
 
         <div className="footer-links">
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
           {/* <a href="/home#about">About</a> */}
           {/* <a href="/home/#blog">Blogs</a> */}
-          <a href="/skills">Skills</a>
-          <a href="/projects">Projects</a>
-          <a href="/experience">Experience</a>
+          <Link to="/skills">Skills</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/experience">Experience</Link>
 
 
 
 
-          <a href="/contact" className="contact-btn">
+          <Link to="/contact" className="contact-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -46,7 +46,7 @@ const Footer = () => {
                 />
               </g>
             </svg>
-          </a>
+          </Link>
         </div>
 
         {/* DIVIDER */}
