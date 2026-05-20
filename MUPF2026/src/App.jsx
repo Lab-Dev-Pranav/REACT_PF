@@ -38,10 +38,11 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
+
 
           <Route path="/add-skills" element={<AddSkils />} />
           <Route path="/add-projects" element={<AddProjects />} />
+          <Route path="*" element={<NotFound />} />
 
         </Routes>
       </main>
