@@ -1,4 +1,9 @@
+import { useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
+
+
+
+
 
 import DigitalIntro from './degitalintro.jsx'
 import Home from './pages/home/home.jsx'
@@ -16,6 +21,10 @@ import Footer from './pages/include/footer.jsx'
 function App() {
   const location = useLocation()
   const isIntroRoute = location.pathname === '/'
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
 
   return (
     <div className={isIntroRoute ? 'app-shell app-shell-intro' : 'app-shell'}>
