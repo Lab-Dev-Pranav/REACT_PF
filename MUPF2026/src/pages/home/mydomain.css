@@ -1,0 +1,158 @@
+.domain-container {
+      width: 100%;
+      min-height: 100vh;
+      padding: 80px 20px;
+      background: #000000;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+.domain-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 55px;
+}
+
+.domain-header h1 {
+      color: #ffffff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+}
+
+.domain-emoji {
+      font-size: 2rem;
+}
+
+.domain-grid {
+      width: 100%;
+      max-width: 1200px;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      /* center all cards */
+      gap: 28px;
+}
+
+.domain-card {
+      width: 320px;
+      min-height: 210px;
+
+      background: rgba(17, 25, 40, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+
+      border-radius: 18px;
+
+      padding: 28px 22px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      transition: all 0.35s ease;
+
+      opacity: 0.85;
+      transform: scale(0.98);
+      user-select: none;
+}
+
+.domain-card:hover {
+      opacity: 1;
+      /* transform: scale(1.03); */
+
+      border-color: rgba(96, 165, 250, 0.682);
+
+      box-shadow:
+            0 8px 25px rgba(0, 0, 0, 0.35),
+            0 0 18px rgba(96, 165, 250, 0.12);
+      cursor: pointer;
+}
+
+.domain-icon {
+      width: 72px;
+      height: 72px;
+
+      border-radius: 50%;
+
+      background: linear-gradient(135deg, #000000, #000000);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 1.8rem;
+      color: #fff;
+
+      margin-bottom: 22px;
+
+      transition: 0.35s ease;
+}
+
+.domain-card:hover .domain-icon {
+      transform: rotate(6deg) scale(1.06);
+}
+
+.domain-card h2 {
+      color: #ffffff;
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+}
+
+.domain-card p {
+      color: rgba(255, 255, 255, 0.916);
+      font-size: 0.95rem;
+      line-height: 1.7;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+      .domain-header h1 {
+            font-size: 2rem;
+      }
+
+      .domain-card {
+            width: 290px;
+      }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+      .domain-container {
+            padding: 60px 16px;
+      }
+
+      .domain-header {
+            margin-bottom: 40px;
+      }
+
+      .domain-header h1 {
+            font-size: 1.6rem;
+      }
+
+      .domain-card {
+            width: 100%;
+            max-width: 330px;
+            min-height: 190px;
+      }
+
+      .domain-icon {
+            width: 65px;
+            height: 65px;
+            font-size: 1.5rem;
+      }
+
+      .domain-card h2 {
+            font-size: 1.15rem;
+      }
+
+      .domain-card p {
+            font-size: 0.9rem;
+      }
+}

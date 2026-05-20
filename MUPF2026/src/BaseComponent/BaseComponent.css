@@ -1,0 +1,24 @@
+.base-container {
+  width: 100vw;
+  min-height: auto;
+  height: auto;
+
+  margin: 0 auto;
+  padding: 60px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+@media (max-width: 860px) {
+  .base-container {
+    padding: 40px 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .base-container {
+    padding: 32px 10px;
+  }
+}

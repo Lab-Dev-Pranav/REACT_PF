@@ -1,0 +1,142 @@
+/* NAVBAR */
+
+.navbar {
+      width: 100%;
+      background: #0f0f0f;
+      color: white;
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      backdrop-filter: blur(10px);
+}
+
+.navbar-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 18px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.navbar-logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #7c3aed;
+      letter-spacing: 1px;
+}
+
+/* DESKTOP LINKS */
+
+.navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+}
+
+.navbar-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: 0.3s ease;
+      position: relative;
+}
+
+.navbar-links a:hover {
+      color: #7c3aed;
+}
+
+/* HAMBURGER */
+
+.navbar-hamburger {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: white;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+
+      width: 100%;
+      height: auto;
+
+      background: rgba(10, 10, 10, 0.98);
+      backdrop-filter: blur(12px);
+
+      z-index: 2000;
+
+      padding: 25px 20px 40px;
+
+      transition: 0.4s ease-in-out;
+}
+
+.mobile-menu.active {
+      top: 0;
+}
+
+.mobile-menu-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 35px;
+}
+
+.mobile-menu-top h2 {
+      color: white;
+      margin: 0;
+}
+
+.mobile-menu-top button {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+}
+
+/* MOBILE LINKS */
+
+.mobile-menu-links {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+}
+
+.mobile-menu-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      transition: 0.3s ease;
+}
+
+.mobile-menu-links a:hover {
+      color: #7c3aed;
+      padding-left: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 577px) {
+
+      .navbar-links {
+            display: none;
+      }
+
+      .navbar-hamburger {
+            display: block;
+      }
+}

@@ -1,0 +1,234 @@
+/* ================= WHAT I DO ================= */
+
+.home-whatido {
+      width: 100%;
+      min-height: 100vh;
+
+      background: #000000;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 80px 20px;
+      box-sizing: border-box;
+}
+
+.whatido-container {
+      width: 100%;
+      max-width: 1200px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 60px;
+}
+
+/* ================= LEFT ================= */
+
+.whatido-left {
+      flex: 1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.whatido-image {
+      width: 100%;
+      max-width: 450px;
+
+      object-fit: contain;
+}
+
+/* ================= RIGHT ================= */
+
+.whatido-right {
+      flex: 1.1;
+      border: 1px solid rgba(255, 0, 0, 0);
+      height: 600px;
+      margin: 0px 0px 0px -100px;
+}
+
+.whatido-title {
+      font-size: 3rem;
+      font-weight: 700;
+
+      color: #0051ff;
+
+      margin-bottom: 14px;
+}
+
+.whatido-subtitle {
+      font-size: 1rem;
+      line-height: 1.8;
+
+      color: #a7a7a7;
+
+      margin-bottom: 35px;
+
+      text-transform: uppercase;
+      letter-spacing: 1px;
+}
+
+/* ================= TECH STACK ================= */
+
+.whatido-tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 18px;
+
+      margin-bottom: 35px;
+}
+
+.tech-card {
+      width: 85px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      gap: 8px;
+
+      color: #374151;
+
+      transition: 0.3s ease;
+}
+
+.tech-card i {
+      font-size: 1.8rem;
+}
+
+.tech-card span {
+      font-size: 0.85rem;
+      color: white;
+}
+
+.tech-card:hover {
+      transform: translateY(-4px);
+      color: #2563eb;
+}
+
+/* ================= POINTS ================= */
+
+.whatido-points {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+}
+
+.whatido-points p {
+      color: #ffffff;
+
+      font-size: 1rem;
+      line-height: 1;
+}
+
+/* ================= TAGS ================= */
+
+.whatido-tags {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 10px;
+}
+
+.whatido-tags span {
+      padding: 8px 14px;
+
+      border-radius: 30px;
+
+      background: #7383ff;
+      color: #ffffff;
+
+      font-size: 0.85rem;
+      font-weight: 500;
+
+      transition: 0.3s ease;
+}
+
+.whatido-tags span:hover {
+      background: #437eff;
+      color: white;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 950px) {
+
+      .whatido-right {
+            margin: 0px 0px 0px 0px;
+            height: 600px;
+      }
+
+      .whatido-container {
+            flex-direction: column;
+            text-align: center;
+
+            gap: 50px;
+      }
+
+      .whatido-tech-stack {
+            justify-content: center;
+      }
+
+      .whatido-tags {
+            justify-content: center;
+      }
+
+      .whatido-points {
+            align-items: center;
+      }
+}
+
+@media (max-width: 576px) {
+
+      .home-whatido {
+            padding: 60px 16px;
+      }
+
+      .whatido-title {
+            font-size: 2.2rem;
+      }
+
+      .whatido-subtitle {
+            font-size: 0.9rem;
+            line-height: 1.7;
+      }
+
+      .whatido-image {
+            max-width: 300px;
+      }
+
+      .tech-card {
+            width: 72px;
+      }
+
+      .tech-card i {
+            font-size: 1.5rem;
+      }
+
+      .tech-card span {
+            font-size: 0.75rem;
+      }
+
+      .whatido-points p {
+            font-size: 0.95rem;
+            text-align: start;
+      }
+
+      .whatido-tags {
+            display: flex;
+            justify-content: flex-start;
+
+      }
+
+      .whatido-tags span {
+            font-size: 0.78rem;
+            padding: 7px 12px;
+
+      }
+}
