@@ -60,7 +60,7 @@ const Navbar = () => {
             Home
           </Link>
 
-           <Link to="/skills" onClick={closeMenu}>
+          <Link to="/skills" onClick={closeMenu}>
             Skills
           </Link>
 

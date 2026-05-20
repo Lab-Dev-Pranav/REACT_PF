@@ -1,38 +1,48 @@
 import React from "react";
 import BaseComponent from "../../BaseComponent/BaseComponent";
 import "./contact.css";
-
-
-
-
+import emailjs from "@emailjs/browser";
 
 const sendEmail = async (e) => {
+  e.preventDefault();
+
   const formData = new FormData(e.target);
+
   const fromName = formData.get("fromName");
   const fromEmail = formData.get("fromEmail");
   const fromMsg = formData.get("fromMsg");
 
-  console.log(formData);
-  console.log(fromName);
-  console.log(fromEmail);
-  console.log(fromMsg);
+  // console.log(fromName);
+  // console.log(fromEmail);
+  // console.log(fromMsg);
 
   try {
 
+    const data = await emailjs.send(
+      "service_05uzerb",
+      "template_zt4s6tb",
+      {
+        from_name: fromName,
+        from_email: fromEmail,
+        message: fromMsg,
+      },
+      "4mzJkxJLR0IvSOnCb"
+    );
 
-    if (error) {
-      console.error("Failed to send:", error);
-      return;
-    }
     console.log("Email sent successfully:", data);
 
+    alert("Message Sent 🚀");
+
+    e.target.reset();
 
   } catch (error) {
+
     console.error("Error sending email:", error);
+
+    alert("Failed to send message");
+
   }
 };
-
-
 
 
 const Contact = () => {

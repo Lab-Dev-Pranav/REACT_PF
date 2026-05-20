@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 
-import AddSkils from "../../ADD/addSkils";
+
 
 const Footer = () => {
   return (
