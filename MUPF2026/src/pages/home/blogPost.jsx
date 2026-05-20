@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import BaseComponent from "../../BaseComponent/BaseComponent";
-import "./blogpost.css";
-
 import blogPosts from "./blogData";
 import BlogPostViewer from "./BlogPostViewer";
 
