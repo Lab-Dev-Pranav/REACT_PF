@@ -8,10 +8,10 @@ const roles = [
   "DSA Expert",
   "React Developer",
 
-      "Frontend Engineer",
-      "Backend Engineer",
-      "API Integration Specialist",
-      "Tech Explorer",
+  "Frontend Engineer",
+  "Backend Engineer",
+  "API Integration Specialist",
+  "Tech Explorer",
 
 ];
 
@@ -70,13 +70,13 @@ const Hero = () => {
           <hr />
 
           <p className="hero-desc">
-            Passionate MERN Stack Enthusiast building modern and scalable web
+            Passionate TECH Enthusiast building modern and scalable web
             applications.
           </p>
 
           <div className="hero-buttons">
-            
-            
+
+
           </div>
         </div>
 
