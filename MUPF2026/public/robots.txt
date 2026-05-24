@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devpranav.onrender.com/sitemap.xml
