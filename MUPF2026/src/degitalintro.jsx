@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import NameIntro from './nameintro'
+import { Helmet } from "react-helmet-async";
 
 const INTRO_DURATION_MS = 6600
 const FADE_OUT_DURATION_MS = 600 // Duration of the fade out effect
@@ -27,6 +28,14 @@ function DigitalIntro() {
 
   return (
     <section className={`intro-screen ${isFadingOut ? 'fade-out' : ''}`} aria-label="Portfolio intro animation">
+
+      <Helmet>
+        <title>Pranav | Portfolio</title>
+        <meta name="description" content="Pranav | Intro" />
+        <meta name="keywords" content="Pranav | Intro" />
+        <meta name="author" content="Pranav" />
+      </Helmet>
+
       <div className="intro-orbit intro-orbit-one" />
       <div className="intro-orbit intro-orbit-two" />
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BaseComponent from "../../BaseComponent/BaseComponent";
 import "./projects.css";
+import { Helmet } from "react-helmet-async";
 
 import projectsData from "../../ADD/projects";
 
@@ -16,6 +17,14 @@ const Projects = () => {
 
   return (
     <div className="projects-page">
+
+      <Helmet>
+        <title>Projects | Dev.Pranav</title>
+        <meta name="description" content="Projects | Dev.Pranav" />
+        <meta name="keywords" content="Projects | Dev.Pranav" />
+        <meta name="author" content="Dev.Pranav" />
+      </Helmet>
+
       <BaseComponent>
         <div className="projects-heading">
           <h1 className="projects-title">

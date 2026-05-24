@@ -2,6 +2,7 @@ import React from "react";
 import BaseComponent from "../../BaseComponent/BaseComponent";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
+import { Helmet } from "react-helmet-async";
 
 const sendEmail = async (e) => {
   e.preventDefault();
@@ -49,6 +50,13 @@ const sendEmail = async (e) => {
 const Contact = () => {
   return (
     <div className="page-contact">
+
+      <Helmet>
+        <title>Contact | Dev.Pranav</title>
+        <meta name="description" content="Contact | Dev.Pranav" />
+        <meta name="keywords" content="Contact | Dev.Pranav" />
+        <meta name="author" content="Dev.Pranav" />
+      </Helmet>
 
       <BaseComponent>
 

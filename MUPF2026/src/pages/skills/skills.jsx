@@ -3,10 +3,19 @@ import BaseComponent from "../../BaseComponent/BaseComponent";
 import "./skills.css";
 
 import skillsData from "../../ADD/skils";
+import { Helmet } from "react-helmet-async";
 
 const Skills = () => {
   return (
     <div className="page-skills">
+
+      <Helmet>
+        <title>Skills | Dev.Pranav</title>
+        <meta name="description" content="Skills | Dev.Pranav" />
+        <meta name="keywords" content="Skills | Dev.Pranav" />
+        <meta name="author" content="Dev.Pranav" />
+      </Helmet>
+
       <section className="skills-section">
         <BaseComponent>
 

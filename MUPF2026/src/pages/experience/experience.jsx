@@ -1,6 +1,7 @@
 import React from "react";
 import BaseComponent from "../../BaseComponent/BaseComponent";
 import "./experience.css";
+import { Helmet } from "react-helmet-async";
 
 const experiences = [
   {
@@ -42,6 +43,14 @@ const experiences = [
 const Experience = () => {
   return (
     <div className="page-experience">
+
+      <Helmet>
+        <title>Experience | Dev.Pranav</title>
+        <meta name="description" content="Experience | Dev.Pranav" />
+        <meta name="keywords" content="Experience | Dev.Pranav" />
+        <meta name="author" content="Dev.Pranav" />
+      </Helmet>
+
       <BaseComponent>
         <div className="experience-container">
 
