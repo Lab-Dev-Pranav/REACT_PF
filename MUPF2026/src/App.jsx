@@ -1,10 +1,6 @@
 import { useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 
-
-
-
-
 import DigitalIntro from './degitalintro.jsx'
 import Home from './pages/home/home.jsx'
 import Skills from './pages/skills/skills.jsx'
@@ -38,10 +34,10 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
-
-
+           {/* ---------------------------------------- */}
           <Route path="/add-skills" element={<AddSkils />} />
           <Route path="/add-projects" element={<AddProjects />} />
+                  {/* ---------------------------------------- */}
           <Route path="*" element={<NotFound />} />
 
         </Routes>

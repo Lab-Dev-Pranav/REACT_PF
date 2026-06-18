@@ -20,6 +20,20 @@
       mask-image: radial-gradient(circle at center, black 40%, transparent 90%);
       -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 90%);
       opacity: 0.8;
+                  /* border: 1px solid #ae2626; */
+}
+
+.grid-background:hover {
+    opacity: 1;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+   cursor: url("/Screenshot 2025-09-06 114454.png") 16 16, pointer;
+}
+.hero-left, .hero-right, .hero-container:hover {
+    transition: all 0.3s ease;
+    pointer-events: auto;
+   cursor: url("/Screenshot 2025-09-06 114454.png") 16 16, pointer;
+
 }
 
 .grid-background::after {
@@ -34,6 +48,7 @@
                   rgba(79, 70, 229, 0.15),
                   transparent);
       animation: scanning 10s linear infinite;
+
 }
 
 @keyframes scanning {
@@ -58,6 +73,7 @@
                   rgba(0, 191, 255, 0.05) 40%,
                   transparent 70%);
       filter: blur(100px);
+
       pointer-events: none;
       z-index: -1;
 }
@@ -110,7 +126,7 @@
       gap: 15px;
       flex-wrap: wrap;
       overflow: hidden;
-      user-select: none;
+      /* user-select: none; */
 }
 
 .hero-greet {
