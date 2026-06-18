@@ -47,6 +47,14 @@ div.logo-container{
       margin: 20px 0px 0px 10px;
 }
 
+.navbar-logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #7c3aed;
+      letter-spacing: 1px;
+      text-decoration: none;
+      display: block;
+}
 
 /* DESKTOP LINKS */
 
@@ -158,5 +166,13 @@ div.logo-container{
 
       .navbar-hamburger {
             display: block;
+      }
+
+      .logo{
+      margin: 20px 0px 0px -10px;
+      }
+
+      .navbar-TITLE {
+      font-size: 1rem;
       }
 }

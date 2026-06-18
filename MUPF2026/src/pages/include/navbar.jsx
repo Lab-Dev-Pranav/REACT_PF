@@ -50,6 +50,7 @@ const Navbar = () => {
 
         {/* TOP */}
         <div className="mobile-menu-top">
+            <img className="logo" src="TAB-LOGO.png" alt="logo" />
           {/* LOGO */}
           <Link to="/" className="navbar-logo">
             _Dev.Pranav____
