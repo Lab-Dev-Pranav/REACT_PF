@@ -23,7 +23,7 @@ const WhatIDo = () => {
         <div className="whatido-right">
 
           <h1 className="whatido-title">
-            💼 What I do
+            💼 What I Do
           </h1>
 
           <h3 className="whatido-subtitle">
@@ -32,6 +32,11 @@ const WhatIDo = () => {
 
           {/* TECH STACK */}
           <div className="whatido-tech-stack">
+
+            <div className="tech-card">
+              <i className="fa-solid fa-code-branch"></i>
+              <span>DSA</span>
+            </div>
 
             <div className="tech-card">
               <i className="fa-brands fa-java"></i>
@@ -54,23 +59,38 @@ const WhatIDo = () => {
             </div>
 
             <div className="tech-card">
-              <i className="fa-brands fa-github"></i>
-              <span>GitHub</span>
-            </div>
-
-            <div className="tech-card">
               <i className="fa-brands fa-git-alt"></i>
               <span>Git</span>
             </div>
 
             <div className="tech-card">
-              <i className="fa-solid fa-database"></i>
-              <span>MongoDB</span>
+              <i className="fa-brands fa-github"></i>
+              <span>GitHub</span>
             </div>
 
             <div className="tech-card">
               <i className="fa-solid fa-code"></i>
               <span>VS Code</span>
+            </div>
+
+            <div className="tech-card">
+              <i className="fa-brands fa-npm"></i>
+              <span>npm</span>
+            </div>
+
+            <div className="tech-card">
+              <i className="fa-solid fa-bolt"></i>
+              <span>Hoppscotch</span>
+            </div>
+
+            <div className="tech-card">
+              <i className="fa-solid fa-paper-plane"></i>
+              <span>Thunder Client</span>
+            </div>
+
+            <div className="tech-card">
+              <i className="fa-brands fa-docker"></i>
+              <span>Docker</span>
             </div>
 
           </div>
@@ -79,16 +99,19 @@ const WhatIDo = () => {
           <div className="whatido-points">
 
             <p>
-              ⚡ Develop highly interactive front-end and backend applications
-              using modern technologies.
+              ⚡ Develop highly interactive front-end / user interfaces for web
+              and mobile applications.
             </p>
 
             <p>
-              ⚡ Build scalable full-stack MERN and Java based applications.
+              ⚡ Build Progressive Web Applications (PWAs) using SPA and normal
+              stacks.
             </p>
 
             <p>
-              ⚡ Integrate APIs, authentication systems and cloud services.
+              ⚡ Integrate third-party services like MongoDB Atlas, Cloudinary,
+              Passport.js, Nodemailer, Mapbox, AWS, Render, Vanta JS,
+              DigitalOcean and more.
             </p>
 
           </div>
@@ -103,6 +126,7 @@ const WhatIDo = () => {
             <span>Mapbox</span>
             <span>AWS</span>
             <span>Render</span>
+            <span>Vanta JS</span>
             <span>DigitalOcean</span>
 
           </div>

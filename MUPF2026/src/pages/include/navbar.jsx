@@ -15,10 +15,16 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
 
+
+    <div className="logo-container">
+          <img className="logo" src="TAB-LOGO.png" alt="logo" />
+
           {/* LOGO */}
-          <Link to="/" className="navbar-logo">
+          <Link to="/" className="navbar-TITLE">
             _Dev.Pranav____
           </Link>
+
+      </div>
 
           {/* DESKTOP LINKS */}
           <div className="navbar-links">
