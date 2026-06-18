@@ -50,7 +50,7 @@ const overlayStyle = {
       width: "100%",
       height: "100vh",
 
-      background: "#001d88ff",
+      background: "rgba(24, 142, 197, 0)",
 
       zIndex: 9999,
 
@@ -61,12 +61,24 @@ const overlayStyle = {
 };
 
 const contentStyle = {
-      width: "90%",
-      maxWidth: "900px",
+  width: "80%",
+  maxWidth: "900px",
+  padding: "80px 20px",
 
-      padding: "80px 20px",
+  color: "#e9962aba",
 
-      color: "#fff",
+  // Glassmorphism
+  background: "rgba(255, 255, 255, 0.08)",
+  backdropFilter: "blur(16px)",
+  WebkitBackdropFilter: "blur(16px)", // Safari support
+
+  border: "1px solid rgba(255, 255, 255, 0.18)",
+  borderRadius: "20px",
+
+  boxShadow: "0 8px 32px rgba(0, 0, 0, 0.42)",
+
+  // Optional subtle glow
+  // boxShadow: "0 8px 32px rgba(99, 197, 24, 0.25)",
 };
 
 const headerStyle = {
@@ -75,11 +87,12 @@ const headerStyle = {
 
 const dateStyle = {
       color: "#999",
+      fontSize: "1.25rem",
 };
 
 const bodyStyle = {
       lineHeight: 1.8,
-      fontSize: "1rem",
+      fontSize: "1.2rem",
 };
 
 const closeBtn = {
@@ -98,4 +111,5 @@ const closeBtn = {
       fontSize: "1rem",
 
       background: "#f4c20d",
+      zIndex: 10000,
 };
