@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { Link } from 'react-router-dom';
+import { Link, Scripts } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -92,14 +92,15 @@ const Footer = () => {
           <a href="/login">©</a>{" "}
           {new Date().getFullYear()} All rights reserved by
           {" "}
-          _<a href="/add-skills">DEV</a>
-          .
-          <a href="/add-projects">PRANAV</a>
-          ____
+          _DEV.PRANAV____
         </p>
       </div>
     </footer>
   );
 };
+
+
+
+
 
 export default Footer;

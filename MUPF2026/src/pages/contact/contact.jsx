@@ -125,16 +125,16 @@ const Contact = () => {
 
               <div className="info-item">
                 <span>Email:</span>
-                <p>pranavpatilg2004@gmail.com</p>
+                <a href="mailto:pranavpatilg2004@gmail.com">pranavpatilg2004@gmail.com</a>
               </div>
 
               <div className="info-item">
                 <span>Phone:</span>
-                <p>+91 7058454759</p>
+                <a href="tel:+917058454759">+91 7058454759</a>
               </div>
 
               <div className="info-item">
-                <span>Location:</span>
+                <span>Available at:</span>
                 <p>
                   Bhusawal, Maharashtra
                   <br />

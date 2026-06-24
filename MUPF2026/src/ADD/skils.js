@@ -51,6 +51,36 @@ const skillsData = [
       },
 
       {
+            skill: "Rate Limiting & Caching",
+            points: [
+                  "Create Bucket",
+                  "Use Existing Bucket",
+                  "Refill Tokens",
+                  "Delete Inactive Bucket",
+                  "Multi-Route Configuration",
+                  "Bucket Scope & Isolation",
+                  "Performance Optimization"
+            ],
+            tag: "backend",
+            sequence: 3
+      },
+
+      {
+    skill: "Debouncing",
+    points: [
+        "Debouncing Basics",
+        "Delay User Input",
+        "Clear Existing Timer",
+        "Create New Timer",
+        "Reduce API Requests",
+        "Optimize Search Performance",
+        "Improve User Experience"
+    ],
+    tag: "frontend",
+    sequence: 4
+},
+
+      {
             skill: "HTML 5",
             points: [
                   "Structure",
@@ -62,7 +92,7 @@ const skillsData = [
                   "Selectors"
             ],
             tag: "core",
-            sequence: 3
+            sequence: 5
       },
 
       {
@@ -78,7 +108,7 @@ const skillsData = [
                   "Animations & 3d Space"
             ],
             tag: "core",
-            sequence: 4
+            sequence: 6
       },
 
       {
@@ -96,7 +126,7 @@ const skillsData = [
                   "Flex Utility"
             ],
             tag: "core",
-            sequence: 5
+            sequence: 7
       },
 
       {
@@ -125,7 +155,7 @@ const skillsData = [
                   "Async Await"
             ],
             tag: "core",
-            sequence: 6
+            sequence: 8
       },
 
       {
@@ -152,7 +182,7 @@ const skillsData = [
                   "Meterial-UI"
             ],
             tag: "core",
-            sequence: 7
+            sequence: 9
       },
 
       {
@@ -167,7 +197,7 @@ const skillsData = [
                   "Intro to Servers"
             ],
             tag: "core",
-            sequence: 8
+            sequence: 10
       },
 
       {
@@ -178,7 +208,7 @@ const skillsData = [
                   "Middleware"
             ],
             tag: "core",
-            sequence: 9
+            sequence: 11
       },
 
       {
@@ -198,7 +228,7 @@ const skillsData = [
                   "Relationships"
             ],
             tag: "core",
-            sequence: 10
+            sequence: 12
       },
 
       {
@@ -211,7 +241,7 @@ const skillsData = [
                   "Session Stores"
             ],
             tag: "core",
-            sequence: 11
+            sequence: 13
       },
 
       {
@@ -224,7 +254,7 @@ const skillsData = [
                   "Slice"
             ],
             tag: "core",
-            sequence: 12
+            sequence: 14
       },
 
       {
@@ -237,7 +267,7 @@ const skillsData = [
                   "operations on files"
             ],
             tag: "soft",
-            sequence: 13
+            sequence: 15
       },
 
       {
@@ -252,7 +282,7 @@ const skillsData = [
                   "Pull"
             ],
             tag: "soft",
-            sequence: 14
+            sequence: 16
       },
 
       {
@@ -266,7 +296,7 @@ const skillsData = [
                   "Session Management"
             ],
             tag: "soft",
-            sequence: 15
+            sequence: 17
       }
 ];
 
