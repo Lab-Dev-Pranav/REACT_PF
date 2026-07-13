@@ -4,7 +4,7 @@ const projectsData = [
     description: "FlowMeet is a full-stack, real-time video conferencing application built using React, Node.js, Socket.IO, WebRTC, and MongoDB, designed to deliver a seamless virtual meeting experience. It features secure token-based authentication, protected routes, meeting history tracking, and the ability to create or join meetings using unique codes. The platform supports multi-user video calls with real-time WebRTC streaming, in-call text chat with unread indicators, participant management with host tagging and 'You' labels, pin-to-stage view for focused interaction, draggable local video preview, and controls for camera, microphone, speaker mute (local-only), and screen sharing. With a structured separation of frontend and backend, RESTful APIs for user activity, and Socket.IO-based signaling for live communication, FlowMeet demonstrates scalable full-stack architecture and real-world implementation of modern web technologies for collaborative communication.",
     languages: ["React (Vite)", "Router", "Material UI", "Axios", "Socket.IO Client", "Node.js", "Express", "Socket.IO", "Mongoose", "MongoDB", "ENV", "bcrypt", "WebRTC"],
     tag: "Grand",
-    githubLink: "",
+    githubLink: "https://github.com/Lab-Dev-Pranav/FlowMeet",
     runLink: "https://flowmeet-be.onrender.com/",
     sequence: 1
   },

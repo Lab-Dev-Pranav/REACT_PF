@@ -85,13 +85,16 @@ const WhatIDo = () => {
 
             <div className="tech-card">
               <i className="fa-solid fa-paper-plane"></i>
-              <span>Thunder Client</span>
+              <span>Thunder </span>
+            </div>
+            
+            <div className="tech-card">
+              <i className="fa-solid fa-bolt"></i>
+              <span>Hoppscotch</span>
             </div>
 
-            <div className="tech-card">
-              <i className="fa-brands fa-docker"></i>
-              <span>Docker</span>
-            </div>
+
+
 
           </div>
 
@@ -107,29 +110,24 @@ const WhatIDo = () => {
               ⚡ Build Progressive Web Applications (PWAs) using SPA and normal
               stacks.
             </p>
+            <div className="whatido-tags">
+              ⚡ Integrate third-party services like
+              <span>MongoDB Atlas</span>
+              <span>Cloudinary</span>
+              <span>Passport JS</span>
+              <span>Nodemailer</span>
+              <span>Mapbox</span>
+              <span>AWS</span>
+              <span>Render</span>
+              <span>Vanta JS</span>
+              <span>DigitalOcean</span>
+              and more.
+            </div>
 
-            <p>
-              ⚡ Integrate third-party services like MongoDB Atlas, Cloudinary,
-              Passport.js, Nodemailer, Mapbox, AWS, Render, Vanta JS,
-              DigitalOcean and more.
-            </p>
-
-          </div>
-
-          {/* TAGS */}
-          <div className="whatido-tags">
-
-            <span>MongoDB Atlas</span>
-            <span>Cloudinary</span>
-            <span>Passport JS</span>
-            <span>Nodemailer</span>
-            <span>Mapbox</span>
-            <span>AWS</span>
-            <span>Render</span>
-            <span>Vanta JS</span>
-            <span>DigitalOcean</span>
 
           </div>
+
+
 
         </div>
 

@@ -213,7 +213,7 @@ function Academics() {
 
                       height: item.subCourses ? "340px" : "160px",
 
-                      background: "#f4c20d",
+                      background: "#f4be0d",
 
                       zIndex: 0,
                     }}
@@ -254,7 +254,7 @@ function Academics() {
                   sx={{
                     p: 3,
                     borderRadius: "18px",
-                    background: "#f5f5f5",
+                    background: "#ffffff17",
                     mb: 4,
                     transition: "0.3s ease",
 

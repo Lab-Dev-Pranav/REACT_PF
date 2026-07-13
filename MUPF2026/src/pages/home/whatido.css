@@ -46,8 +46,8 @@
 
 .whatido-right {
       flex: 1.1;
-      border: 1px solid rgba(255, 0, 0, 0);
-      height: 600px;
+      /* border: 1px solid rgba(255, 0, 0, 0); */
+      height: 640px;
       margin: 0px 0px 0px -100px;
 }
 
@@ -136,9 +136,9 @@
 }
 
 .whatido-tags span {
-      padding: 8px 14px;
+      padding: 4px 14px;
 
-      border-radius: 30px;
+      border-radius: 10px;
 
       background: #7383ff;
       color: #ffffff;
