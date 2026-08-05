@@ -1,0 +1,97 @@
+
+@keyframes cube-loader-hue {
+      from {
+            filter: hue-rotate(0deg);
+      }
+
+      to {
+            filter: hue-rotate(360deg);
+      }
+}
+
+.cube-loader {
+      position: relative;
+      flex: 0 0 400px;
+      width: 280px;
+      height: 430px;
+      /* border: 1px solid red; */
+      overflow-x: hidden !important;
+      transform: skewY(-20deg);
+      animation: cube-loader-hue 5s linear infinite;
+}
+
+.cube-loader .cube {
+      position: absolute;
+      top: 130px;
+      left: 50%;
+      width: 200px;
+      height: 200px;
+      margin-left: -10px;
+      overflow: visible !important;
+      z-index: 2;
+}
+
+.cube-loader .cube:nth-child(2) {
+      z-index: 1;
+      translate: -60px -60px;
+}
+
+.cube-loader .cube:nth-child(3) {
+      z-index: 3;
+      translate: 60px 60px;
+}
+
+.cube-loader .cube-column {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      overflow: visible !important;
+      translate: calc(-70px * var(--x)) calc(-60px * var(--y));
+}
+
+.cube-loader .cube-column span {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: #dcdcdc;
+      z-index: calc(1 * var(--i));
+      transition: 1.5s;
+}
+
+.cube-loader .cube-column span:hover,
+.cube-loader .cube-column span:hover::before,
+.cube-loader .cube-column span:hover::after {
+      transition: 0s;
+      background: #ef4149;
+}
+
+.cube-loader .cube-column span:hover {
+      filter: drop-shadow(0 0 30px #ef4149);
+}
+
+.cube-loader .cube-column span::before {
+      content: "";
+      position: absolute;
+      left: -40px;
+      width: 40px;
+      height: 100%;
+      background: #fff;
+      transform-origin: right;
+      transform: skewY(45deg);
+      transition: 1.5s;
+}
+
+.cube-loader .cube-column span::after {
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: #f2f2f2;
+      transform-origin: bottom;
+      transform: skewX(45deg);
+      transition: 1.5s;
+}

@@ -207,6 +207,7 @@
       justify-content: center;
       align-items: center;
       /* border: 1px solid red; */
+      overflow: hidden;
 }
 
 .hero-image-wrapper {
@@ -274,6 +275,14 @@
       right: -60px;
       filter: blur(40px);
 }
+
+
+
+
+/* =--------------------------------------- */
+
+/* =--------------------------------------- */
+
 
 /* RESPONSIVE */
 
