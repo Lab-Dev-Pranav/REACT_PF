@@ -29,16 +29,20 @@
       margin-left: -10px;
       overflow: visible !important;
       z-index: 2;
+      /* background-color: #ef4149; */
+      /* color: #ef4149; */
 }
 
 .cube-loader .cube:nth-child(2) {
       z-index: 1;
       translate: -60px -60px;
+      
 }
 
 .cube-loader .cube:nth-child(3) {
       z-index: 3;
       translate: 60px 60px;
+
 }
 
 .cube-loader .cube-column {
@@ -48,6 +52,7 @@
       gap: 30px;
       overflow: visible !important;
       translate: calc(-70px * var(--x)) calc(-60px * var(--y));
+      
 }
 
 .cube-loader .cube-column span {
@@ -58,6 +63,7 @@
       background: #dcdcdc;
       z-index: calc(1 * var(--i));
       transition: 1.5s;
+            background-color: #ef4149 !important;
 }
 
 .cube-loader .cube-column span:hover,
