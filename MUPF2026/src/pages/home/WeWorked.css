@@ -1,0 +1,237 @@
+.worked-section {
+  background: #0d0d0d00;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.worked-section h1{
+  background-color: #f59f0b00;
+  text-align: center;
+  font-size: 50px;
+  margin: 50px 0px -20px 0px;
+}
+
+.worked-heading {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.worked-heading span {
+  color: #f59e0b;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.worked-heading h2 {
+  color: white;
+  font-size: 48px;
+  margin: 15px 0;
+}
+
+.worked-heading p {
+  color: #a1a1aa;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.marquee-container {
+  overflow: hidden;
+  margin: 20px 0;
+  padding: 8px 0px 0px 0px;
+}
+
+.marquee-container:hover .marquee,
+.marquee-container:hover .marquee-reverse {
+  animation-play-state: paused;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 20px;
+}
+
+.marquee {
+  animation: scrollLeft 30s linear infinite;
+}
+
+.marquee-reverse {
+  animation: scrollRight 30s linear infinite;
+}
+
+.glass-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  /* border: 1px solid rgba(239, 11, 11, 0.894); */
+  color: white;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px) ;
+
+  border-color: #f59e0b;
+
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+}
+
+.glass-card p {
+  margin: 0;
+}
+
+.fade-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 120px;
+  height: 100%;
+
+  background: linear-gradient(
+    to right,
+    #0d0d0d,
+    transparent
+  );
+
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fade-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 120px;
+  height: 100%;
+
+  background: linear-gradient(
+    to left,
+    #0d0d0d,
+    transparent
+  );
+
+  z-index: 2;
+  pointer-events: none;
+}
+
+.desktop-view {
+  display: block;
+}
+
+.mobile-view {
+  display: none;
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .worked-section {
+    padding: 70px 0;
+  }
+
+  .worked-heading h2 {
+    font-size: 32px;
+  }
+
+  .worked-heading p {
+    font-size: 14px;
+  }
+
+  .glass-card {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+  }
+
+  .fade-left,
+  .fade-right {
+    width: 60px;
+  }
+}
+/* Keep marquee rows at their intrinsic width; index.css applies clipping to every div. */
+.worked-section .marquee-track {
+  max-width: none !important;
+  overflow: visible !important;
+}
+
+.worked-section .glass-card {
+  flex: 0 0 auto;
+  max-width: none !important;
+  overflow: visible !important;
+}
+
+/* ------------------- */
+
+
+/* From Uiverse.io by SalladShooter */ 
+.button {
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 2em;
+  aspect-ratio: 1/0.25;
+  color: white;
+  background: #21212100;
+  background-size: cover;
+  background-blend-mode: overlay;
+  border-radius: 0.5em;
+  outline: 0.1em solid #35353500;
+  border: 0;
+  box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.icon {
+  fill: white;
+  width: 1em;
+  aspect-ratio: 1;
+  top: 0;
+  left: 0;
+  margin: auto;
+  transform: translate(-35%, 10%);
+}
+
+
+
+

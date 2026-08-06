@@ -62,8 +62,8 @@
       height: 50px;
       background: #dcdcdc;
       z-index: calc(1 * var(--i));
-      transition: 1.5s;
-            background-color: #ef4149 !important;
+      transition: 1.5s ease-in-out;
+            /* background-color: #ef4149 !important; */
 }
 
 .cube-loader .cube-column span:hover,
@@ -75,6 +75,7 @@
 
 .cube-loader .cube-column span:hover {
       filter: drop-shadow(0 0 30px #ef4149);
+      transform: scale(1.5);
 }
 
 .cube-loader .cube-column span::before {

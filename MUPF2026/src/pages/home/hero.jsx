@@ -83,33 +83,7 @@ const Hero = () => {
 
         {/* RIGHT */}
         <div className="hero-right">
-
-          {/* <div className="hero-image-wrapper">
-            <div className="hero-code">
-              <p>
-                <span className="hero-code-keyword">const</span> role =
-                <span className="hero-code-value">
-                  {" "}['Developer', 'Debugger']
-                </span>
-              </p>
-              <p>
-                <span className="hero-code-keyword">const</span> focus =
-                <span className="hero-code-value">
-                  {" "}'build scalable & useful products'
-                </span>
-              </p>
-              <p>
-                <span className="hero-code-keyword">const</span> mindset =
-                <span className="hero-code-value">
-                  {" "}'learn → build → improve → repeat'
-                </span>
-              </p>
-            </div>
-          </div> */}
-
              < CubeLoader />
-
-
         </div>
 
 

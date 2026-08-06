@@ -96,35 +96,34 @@
 
 .projects-grid {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       gap: 30px;
 }
 
+
+
 .project-card {
       position: relative;
-      width: 525px;
+      width: 80%;
       padding: 24px;
-
       border-radius: 28px;
-
       overflow: hidden;
-
       transition: 0.4s ease;
-
       border: 1px solid rgba(255, 255, 255, 0.08);
-
       background:
             linear-gradient(145deg,
                   rgba(99, 102, 241, 0.18),
                   rgba(59, 130, 246, 0.12),
                   rgba(15, 23, 42, 0.75));
-
       backdrop-filter: blur(14px);
-
       box-shadow:
             0 10px 30px rgba(0, 0, 0, 0.35);
+      display: flex;
+      gap: 15px;
 }
+
 
 .project-card:hover {
       box-shadow:
@@ -150,6 +149,45 @@
 
 .project-card:hover::before {
       opacity: 1;
+}
+
+
+
+.project-card-l {
+      border: 0.5px solid rgba(255, 0, 0, 0);
+      width: 35%;
+
+}
+
+.project-card-r {
+      border: 0.5px solid rgba(255, 0, 0, 0);
+      width: 65%;
+}
+
+
+@media (max-width: 925px) {
+      .project-card {
+            display: flex;
+            flex-direction: column;
+      }
+
+      .project-card-l {
+            width: 100%;
+      }
+
+      .project-card-r {
+            width: 100%;
+      }
+
+      .project-line {
+            display: block;
+      }
+}
+
+@media (max-width: 455px) {
+      .project-card {
+            width: 100%;
+      }
 }
 
 .project-top,
@@ -197,6 +235,13 @@
                   #6366f1,
                   #3b82f6,
                   transparent);
+      display: none;
+}
+
+@media (max-width: 925px) {
+      .project-line {
+            display: block;
+      }
 }
 
 .project-description {
@@ -369,5 +414,22 @@
       .tech-pill {
             font-size: 12px;
             padding: 8px 12px;
+      }
+}
+
+
+.blink-highlight {
+      animation: blink 0.4s ease-in-out 5;
+}
+
+@keyframes blink {
+
+      0%,
+      100% {
+            background-color: transparent;
+      }
+
+      50% {
+            background-color: #747aff69;
       }
 }

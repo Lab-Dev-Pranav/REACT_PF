@@ -8,7 +8,7 @@ function NameIntro() {
             <>
                   <svg id="canvas" width="828.416" height="244.984" viewBox="173.161 207.018 828.416 244.984"
                         preserveAspectRatio="xMidYMid meet"
-                        class="h-full w-full max-w-4xl text-primary transition-opacity duration-300 opacity-100"
+                        className="h-full w-full max-w-4xl text-primary transition-opacity duration-300 opacity-100"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="canvas-strokes">
                               <path id="SIGN1"

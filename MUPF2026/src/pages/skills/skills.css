@@ -66,14 +66,17 @@
 }
 
 .skills-grid {
-      display: grid;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 30px;
 }
 
 .skill-card {
       position: relative;
-
+      width: 80%;
       padding: 18px;
 
       border-radius: 28px;
@@ -94,6 +97,12 @@
 
       box-shadow:
             0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 455px) {
+      .skill-card {
+            width: 100%;
+      }
 }
 
 .skill-card:hover {
@@ -258,5 +267,22 @@
       .skill-point {
             font-size: 12px;
             padding: 8px 12px;
+      }
+}
+
+
+.blink-highlight {
+      animation: blink 0.4s ease-in-out 5;
+}
+
+@keyframes blink {
+
+      0%,
+      100% {
+            background-color: transparent;
+      }
+
+      50% {
+            background-color: #747aff69;
       }
 }

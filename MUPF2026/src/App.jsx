@@ -19,8 +19,20 @@ function App() {
   const isIntroRoute = location.pathname === '/'
 
   useEffect(() => {
+    const targetId = decodeURIComponent(location.hash.slice(1))
+
+    if (targetId) {
+      requestAnimationFrame(() => {
+        document.getElementById(targetId)?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        })
+      })
+      return
+    }
+
     window.scrollTo(0, 0)
-  }, [location.pathname])
+  }, [location.pathname, location.hash])
 
   return (
     <div className={isIntroRoute ? 'app-shell app-shell-intro' : 'app-shell'}>

@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BaseComponent from "../../BaseComponent/BaseComponent";
 import "./skills.css";
 
 import skillsData from "../../ADD/skils";
 import { Helmet } from "react-helmet-async";
 
+
+
+
 const Skills = () => {
+
+  useEffect(() => {
+    const id = window.location.hash.substring(1);
+
+    if (!id) return;
+
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.classList.add("blink-highlight");
+
+      setTimeout(() => {
+        element.classList.remove("blink-highlight");
+      }, 2000);
+    }
+  }, []);
+
+
+
   return (
     <div className="page-skills">
 
@@ -33,10 +55,10 @@ const Skills = () => {
 
           <div className="skills-grid">
             {skillsData.map((skillObj, index) => (
-              <div className="skill-card" key={index}>
+              <div className="skill-card" key={index} id={skillObj.name_id}>
 
                 <div className="skill-card-top">
-                  <h2>{skillObj.skill}</h2>
+                  <h2>{skillObj.name}</h2>
 
                   <span className="skill-tag">
                     #{skillObj.tag}

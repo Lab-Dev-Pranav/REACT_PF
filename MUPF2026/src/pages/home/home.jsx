@@ -8,7 +8,10 @@ import BlogPost from './blogPost';
 import MyCertification from './mycertification';
 import ResponsibilityAchievement from './responsibility-achievement';
 import { Helmet } from "react-helmet-async";
+import CubeLoader from "./CubeLoader"
 
+ import WeWorked from "./WeWorked";
+ 
 
 const Home = () => {
   return (
@@ -26,10 +29,15 @@ const Home = () => {
       <About />
       <WhatIDo />
       <MyDomain />
+      <WeWorked />
       <Academics />
       <BlogPost />
       <MyCertification />
       <ResponsibilityAchievement />
+
+      {/* < CubeLoader /> */}
+
+
     </div>
   );
 };

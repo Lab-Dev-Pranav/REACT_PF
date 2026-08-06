@@ -3,7 +3,8 @@
 .home-about {
       width: 100%;
       min-height: 100vh;
-      background: #f4f4f4;
+      background: #000000;
+
 
       display: flex;
       justify-content: center;
@@ -79,18 +80,20 @@
 .about-text {
       font-size: 1rem;
       line-height: 1.9;
-      color: #5b6472;
+      color: #fcfcfc;
       margin-bottom: 24px;
 }
 
 .about-text span {
       color: #3559e6;
+      font-size: 30px;
       font-weight: 700;
+      line-height: 0%;
 }
 
 .about-points {
       padding-left: 22px;
-
+      color: #efebeb;
       display: flex;
       flex-direction: column;
       gap: 14px;
@@ -98,7 +101,7 @@
 
 .about-points li {
       font-size: 1rem;
-      color: #5b6472;
+      color: #f6f7f9;
       line-height: 1.7;
 }
 

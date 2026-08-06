@@ -1,6 +1,7 @@
 const skillsData = [
       {
-            skill: "Core Java",
+            name_id: "Core-Java",
+            name: "Core Java",
             points: [
                   "Intro",
                   "JVM",
@@ -23,7 +24,8 @@ const skillsData = [
       },
 
       {
-            skill: "DSA & ADV-DSA ( Java )",
+            name_id: "DSA-ADV-DSA(Java)",
+            name: "DSA & ADV-DSA ( Java )",
             points: [
                   "Arrays",
                   "2D Arrays",
@@ -51,7 +53,8 @@ const skillsData = [
       },
 
       {
-            skill: "Rate Limiting & Caching",
+            name_id: "Rate-Limiting-Caching",
+            name: "Rate Limiting & Caching",
             points: [
                   "Create Bucket",
                   "Use Existing Bucket",
@@ -66,22 +69,24 @@ const skillsData = [
       },
 
       {
-    skill: "Debouncing",
-    points: [
-        "Debouncing Basics",
-        "Delay User Input",
-        "Clear Existing Timer",
-        "Create New Timer",
-        "Reduce API Requests",
-        "Optimize Search Performance",
-        "Improve User Experience"
-    ],
-    tag: "frontend",
-    sequence: 4
-},
+            name_id: "Debouncing",
+            name: "Debouncing",
+            points: [
+                  "Debouncing Basics",
+                  "Delay User Input",
+                  "Clear Existing Timer",
+                  "Create New Timer",
+                  "Reduce API Requests",
+                  "Optimize Search Performance",
+                  "Improve User Experience"
+            ],
+            tag: "frontend",
+            sequence: 4
+      },
 
       {
-            skill: "HTML 5",
+            name_id: "HTML-5",
+            name: "HTML 5",
             points: [
                   "Structure",
                   "HTML Tags",
@@ -96,7 +101,8 @@ const skillsData = [
       },
 
       {
-            skill: "CSS 3",
+            name_id: "CSS-3",
+            name: "CSS 3",
             points: [
                   "Css Basic's",
                   "Selectors",
@@ -112,7 +118,8 @@ const skillsData = [
       },
 
       {
-            skill: "Bootstrap CSS",
+            name_id: "Bootstrap-CSS",
+            name: "Bootstrap CSS",
             points: [
                   "Reboot CSS",
                   "Responsive Design",
@@ -130,7 +137,8 @@ const skillsData = [
       },
 
       {
-            skill: "JS ( ES6 )",
+            name_id: "JS-(ES6)",
+            name: "JS ( ES6 )",
             points: [
                   "Variables",
                   "Operators",
@@ -159,7 +167,8 @@ const skillsData = [
       },
 
       {
-            skill: "React.js",
+            name_id: "React-js",
+            name: "React.js",
             points: [
                   "Intro To React",
                   "JSX",
@@ -186,7 +195,8 @@ const skillsData = [
       },
 
       {
-            skill: "Node.js",
+            name_id: "Node-js",
+            name: "Node.js",
             points: [
                   "Basics",
                   "REPL",
@@ -201,7 +211,8 @@ const skillsData = [
       },
 
       {
-            skill: "Express.js",
+            name_id: "Express-js",
+            name: "Express.js",
             points: [
                   "Basics",
                   "Ejs",
@@ -212,7 +223,8 @@ const skillsData = [
       },
 
       {
-            skill: "SQL Data Base",
+            name_id: "SQL-Data-Base",
+            name: "SQL Data Base",
             points: [
                   "Introduction",
                   "Select",
@@ -232,7 +244,8 @@ const skillsData = [
       },
 
       {
-            skill: "Mongo DB",
+            name_id: "Mongo-DB",
+            name: "Mongo DB",
             points: [
                   "Introduction",
                   "Use",
@@ -245,7 +258,8 @@ const skillsData = [
       },
 
       {
-            skill: "Redux",
+            name_id: "Redux",
+            name: "Redux",
             points: [
                   "State Management",
                   "Store",
@@ -258,7 +272,8 @@ const skillsData = [
       },
 
       {
-            skill: "Terminal",
+            name_id: "Terminal",
+            name: "Terminal",
             points: [
                   "Introduction",
                   "Directories",
@@ -271,7 +286,8 @@ const skillsData = [
       },
 
       {
-            skill: "Git & GitHub",
+            name_id: "Git-GitHub",
+            name: "Git & GitHub",
             points: [
                   "Introduction",
                   "Branches",
@@ -286,7 +302,8 @@ const skillsData = [
       },
 
       {
-            skill: "Other Mega Work",
+            name_id: "Other-Mega-Work",
+            name: "Other Mega Work",
             points: [
                   "API's Handling",
                   "Error Handling - [ Client side & Server side ]",
