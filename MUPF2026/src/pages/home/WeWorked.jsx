@@ -45,12 +45,12 @@ export default function WeWorked() {
 
       {/* Skills */}
       <h1>🛠️ Skills</h1>
-      <div className="desktop-view">
+      {/* <div className="desktop-view"> */}
         <MarqueeRow
           items={skillsList}
           direction="right"
         />
-      </div>
+      {/* </div> */}
     </section>
   );
 }
@@ -69,7 +69,7 @@ function MarqueeRow({ items, direction }) {
           <a href={`/${item.page}#${encodeURIComponent(item.name_id)}`}
             key={`${item.page}-${item.name_id}-${index}`}
           >
-            <div className="glass-card">
+            <div className="glass-card" >
 
               <p>{item.name}</p>
 

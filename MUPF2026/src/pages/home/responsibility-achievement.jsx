@@ -54,7 +54,7 @@ const cards = [
     bg: "#fff7fb",
     points: [
       "Successfully managed weddings & college festivals.",
-      "Handled logistics, budgeting & coordination.",
+      "Handled show flow, onground coordination, logistics & budgeting",
       "Led vendor communication and execution teams.",
       "Delivered smooth event experiences.",
     ],
@@ -130,9 +130,9 @@ function ResponsibilityAchievement() {
 
                 borderRadius: "18px",
 
-                background: card.bg,
+                background: `rgba(24, 23, 23, 0.45)`,
 
-                border: `1px solid ${card.color}20`,
+                border: `3px solid ${card.color}20`,
 
                 transition: "0.3s ease",
 
@@ -196,11 +196,11 @@ function ResponsibilityAchievement() {
                     component="li"
                     key={i}
                     sx={{
-                      color: "#4b5563",
+                      color: "#929090",
 
                       fontSize: {
-                        xs: "0.8rem",
-                        sm: "0.85rem",
+                        xs: "1rem",
+                        sm: "1.1rem",
                       },
 
                       mb: 1,

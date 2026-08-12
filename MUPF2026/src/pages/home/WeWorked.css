@@ -1,5 +1,6 @@
 .worked-section {
-  background: #0d0d0d00;
+  height: 500px;
+  background: #0ac21300;
   padding: 100px 0;
   overflow: hidden;
   position: relative;
@@ -79,10 +80,8 @@
 
 .glass-card:hover {
   transform: translateY(-5px) ;
-
-  border-color: #f59e0b;
-
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+  background-color: #297eff;
+  box-shadow: 0 0 20px rgba(66, 245, 11, 0.25);
 }
 
 .glass-card p {

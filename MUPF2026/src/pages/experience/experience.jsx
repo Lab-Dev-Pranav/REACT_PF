@@ -5,6 +5,24 @@ import { Helmet } from "react-helmet-async";
 
 const experiences = [
   {
+    title: "HexSoftware",
+    role: "Web Developer Intern",
+    date: "Jan 2025 – Feb 2025",
+    tech: ["HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express"],
+    description:
+      "Worked on practical projects focused on building responsive and interactive web applications.",
+    points: [
+      "Developed a Crowdfunding Platform allowing users to create projects and manage contributions.",
+      "Built a Web Music Player with playback controls and volume management.",
+      "Designed clean and responsive UI layouts.",
+    ],
+  }, {
     title: "Self-Directed",
     role: "Freelance & Open-Source Developer",
     date: "2024 – Present",
@@ -25,19 +43,7 @@ const experiences = [
       "Focused on scalable architecture, deployment workflows, and modern UI/UX practices.",
     ],
   },
-  {
-    title: "HexSoftware",
-    role: "Web Developer Intern",
-    date: "Jan 2025 – Feb 2025",
-    tech: ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB", "Express"],
-    description:
-      "Worked on practical projects focused on building responsive and interactive web applications.",
-    points: [
-      "Developed a Crowdfunding Platform allowing users to create projects and manage contributions.",
-      "Built a Web Music Player with playback controls and volume management.",
-      "Designed clean and responsive UI layouts.",
-    ],
-  },
+
 ];
 
 const Experience = () => {

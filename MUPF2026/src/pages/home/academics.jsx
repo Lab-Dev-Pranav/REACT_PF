@@ -63,7 +63,8 @@ function Academics() {
         display: "flex",
         justifyContent: "center",
         py: 8,
-        bgcolor: "#000000",
+        bgcolor: "#bb191900",
+        // border : "1px solid red",
       }}
     >
       {/* Main Center Container */}
@@ -362,7 +363,7 @@ function Academics() {
 
                           <Box
                             sx={{
-                              background: "#ffffff",
+                              background: "#0c0c0c",
                               border: "1px solid #ececec",
 
                               borderRadius: "14px",
@@ -372,7 +373,7 @@ function Academics() {
                               transition: "0.3s ease",
 
                               "&:hover": {
-                                backgroundColor: "#ffedacff",
+                                backgroundColor: "rgba(255, 237, 172, 0)",
                               },
                             }}
                           >
@@ -389,7 +390,7 @@ function Academics() {
 
                             <Typography
                               sx={{
-                                color: "#4f4f4fff",
+                                color: "rgb(58, 124, 247)",
                                 fontWeight: 600,
                                 fontSize: "0.95rem",
                               }}
@@ -399,7 +400,7 @@ function Academics() {
                             <Typography
                               sx={{
                                 color: "#7a7a7adc",
-                                fontWeight: 600,
+                                fontWeight: 300,
                                 fontSize: "0.95rem",
                               }}
                             >
