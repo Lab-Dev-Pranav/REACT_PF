@@ -256,7 +256,9 @@ function Academics() {
                     p: 3,
                     borderRadius: "18px",
                     background: "#ffffff17",
+                    border: "2px solid #ffffffa1",
                     mb: 4,
+                    margin: "10px",
                     transition: "0.3s ease",
 
                     "&:hover": {

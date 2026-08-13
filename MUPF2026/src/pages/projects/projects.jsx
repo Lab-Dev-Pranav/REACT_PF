@@ -118,7 +118,7 @@ const Projects = () => {
                       rel="noreferrer"
                       className="github-btn"
                     >
-                      🔗 GitHub
+                      🔗 Repo
                     </a>
                     <a
                       href={project.runLink || "#"}
@@ -126,7 +126,7 @@ const Projects = () => {
                       rel="noreferrer"
                       className="live-btn"
                     >
-                      🚀 Live Demo
+                      🚀 Live
                     </a>
                   </div>
                 </div>
