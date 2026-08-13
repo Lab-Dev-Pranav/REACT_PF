@@ -51,7 +51,6 @@ function App() {
           <Route path="/add-projects" element={<AddProjects />} />
                   {/* ---------------------------------------- */}
           <Route path="*" element={<NotFound />} />
-
         </Routes>
       </main>
 

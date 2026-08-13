@@ -112,22 +112,39 @@ const Projects = () => {
                   </p>
 
                   <div className="project-actions">
-                    <a
+                    {project.githubLink ?
+                      <a
+                        href={project.githubLink || "#"}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="github-btn"
+                      >
+                        🔗 Repo
+                      </a>
+                      : ""}
+
+                    {/* <a
                       href={project.githubLink || "#"}
                       target="_blank"
                       rel="noreferrer"
                       className="github-btn"
                     >
                       🔗 Repo
-                    </a>
-                    <a
-                      href={project.runLink || "#"}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="live-btn"
-                    >
-                      🚀 Live
-                    </a>
+                    </a> */}
+
+                    {project.runLink ?
+                      <a
+                        href={project.runLink || "#"}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="live-btn"
+                      >
+                        🚀 Live
+                      </a>
+                      : ""}
+
+
+
                   </div>
                 </div>
 
