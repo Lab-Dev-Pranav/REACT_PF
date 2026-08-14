@@ -1,7 +1,7 @@
 import React from 'react';
 import BaseComponent from '../../BaseComponent/BaseComponent';
 import "./about.css";
-
+import StrokeText from '../../component/StrokeText';
 const About = () => {
   return (
     <BaseComponent className="home-about" id="about">
@@ -21,7 +21,26 @@ const About = () => {
         <div className="about-right" >
 
           <h1 className="about-title">
-            👋 About Me
+            {/* 👋 About Me */}
+
+
+            <StrokeText
+              text="About Me"
+              strokeColor="#286af8"
+              fillColor="#F8FAFC"
+              strokeWidth={2.4}
+              drawDuration={1.6}
+              fillDelay={0.2}
+              stagger={0.05}
+              ease="power2.out"
+              trigger="scroll"
+              fillMode="wipe"
+              fontSize={60}
+              fontWeight={800}
+              letterSpacing={-4}
+              reverse={false}
+            />
+
           </h1>
 
           <p className="about-text">

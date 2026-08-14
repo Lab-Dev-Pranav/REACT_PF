@@ -26,7 +26,6 @@
 }
 
 /* LEFT */
-
 .about-left {
       flex: 1;
 
@@ -199,6 +198,7 @@
 
       .about-points {
             gap: 10px;
+            align-items: start;
       }
 
       .about-points li {

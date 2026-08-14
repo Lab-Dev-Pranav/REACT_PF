@@ -199,7 +199,7 @@
 
 
 /* From Uiverse.io by SalladShooter */ 
-.button {
+.button-ps {
   cursor: pointer;
   padding: 0.5em;
   font-size: 1em;
@@ -215,18 +215,19 @@
   box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0);
   transition: all 0.3s ease-in-out;
   position: relative;
+  top: -23px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 
-.icon {
+.icon-ps {
   fill: white;
   width: 1em;
   aspect-ratio: 1;
   top: 0;
-  left: 0;
+  left: 10;
   margin: auto;
   transform: translate(-35%, 10%);
 }

@@ -48,7 +48,6 @@ const Hero = () => {
 
   return (
 
-
     <BaseComponent className="home-hero">
 
       <div className="BG-main">

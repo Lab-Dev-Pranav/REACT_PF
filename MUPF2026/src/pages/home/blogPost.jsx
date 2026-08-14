@@ -98,7 +98,7 @@ const openBtn = {
 
   fontSize: "1rem",
 
-  background: "#f4c20d",
+  background: "#ebe9e4",
 };
 
 const title = {

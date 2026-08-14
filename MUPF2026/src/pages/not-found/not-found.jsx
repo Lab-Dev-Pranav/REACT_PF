@@ -19,7 +19,7 @@ const NotFound = () => {
       </BaseComponent> */}
 
       <a href="/home">
-        <button>
+        <button className='button-b-h'>
           <div class="text">
             <span>Back</span>
             <span>To</span>

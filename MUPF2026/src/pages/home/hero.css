@@ -20,19 +20,22 @@
       mask-image: radial-gradient(circle at center, black 40%, transparent 90%);
       -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 90%);
       opacity: 0.8;
-                  /* border: 1px solid #ae2626; */
+      /* border: 1px solid #ae2626; */
 }
 
 .grid-background:hover {
-    opacity: 1;
-    transition: all 0.3s ease;
-    pointer-events: auto;
-   cursor: url("/Screenshot 2025-09-06 114454.png") 16 16, pointer;
+      opacity: 1;
+      transition: all 0.3s ease;
+      pointer-events: auto;
+      cursor: url("/Screenshot 2025-09-06 114454.png") 16 16, pointer;
 }
-.hero-left, .hero-right, .hero-container:hover {
-    transition: all 0.3s ease;
-    pointer-events: auto;
-   cursor: url("/Screenshot 2025-09-06 114454.png") 16 16, pointer;
+
+.hero-left,
+.hero-right,
+.hero-container:hover {
+      transition: all 0.3s ease;
+      pointer-events: auto;
+      cursor: url("/Screenshot 2025-09-06 114454.png") 16 16, pointer;
 
 }
 
@@ -399,15 +402,24 @@
 
 @media (max-width: 576px) {
       .hero-heading {
+            width: 90%;
             justify-content: center;
             gap: 10px;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid rgba(255, 0, 0, 0.164); */
       }
 
       .hero-greet {
-            font-size: 1.4rem;
+            font-size: 3rem;
       }
 
       .hero-name {
-            font-size: 2.3rem;
+            font-size: 1.4rem;
+            font-weight: 900;
+      }
+
+      .hero-role {
+            font-size: 1.6rem;
       }
 }
