@@ -123,14 +123,7 @@ const Projects = () => {
                       </a>
                       : ""}
 
-                    {/* <a
-                      href={project.githubLink || "#"}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="github-btn"
-                    >
-                      🔗 Repo
-                    </a> */}
+               
 
                     {project.runLink ?
                       <a

@@ -85,7 +85,7 @@ function ResponsibilityAchievement() {
             },
           }}
         >
-          Responsibilities & Achievements
+          🤝 Responsibilities & 🎯 Achievements
         </Typography>
       </Box>
 

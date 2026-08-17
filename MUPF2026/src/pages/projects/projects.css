@@ -252,20 +252,23 @@
 }
 
 .read-more-btn {
+      width: fit-content;
+      height: fit-content;
       border: none;
       background: transparent;
+      /* border: 1px solid rgba(255, 0, 0, 0); */
       color: #818cf8;
       font-size: 15px;
       font-weight: 500;
       cursor: pointer;
-      padding: 5px 0;
+      padding: 5px;
       transition: color 0.3s ease;
 }
 
-.read-more-btn:hover {
+/* .read-more-btn:hover {
       color: #a5b4fc;
       text-decoration: underline;
-}
+} */
 
 .project-tech-stack {
       display: flex;

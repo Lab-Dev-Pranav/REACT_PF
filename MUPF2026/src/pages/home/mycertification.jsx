@@ -69,7 +69,7 @@ function Certificates() {
 
   return (
     <BaseComponent className="home-certificates">
-      <h1>Certificates</h1>
+      <h1>📜 Certificates</h1>
       <div className="blog-slider-container">
 
         <Swiper

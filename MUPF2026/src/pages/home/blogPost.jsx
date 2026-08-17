@@ -10,7 +10,7 @@ function BlogPost() {
 
   return (
     <BaseComponent className="home-blogpost">
-      <h2 style={heading}>Blog Posts</h2>
+      <h2 style={heading}>📝 Blog Posts</h2>
 
       <div style={grid}>
         {blogPosts.map((post) => (
