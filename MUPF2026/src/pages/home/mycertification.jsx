@@ -117,12 +117,15 @@ function Certificates() {
       {/* Full-screen Certificate Overlay */}
       {selectedCert && createPortal(
         <div className="cert-overlay" onClick={() => setSelectedCert(null)}>
-          <button className="cert-overlay__close" onClick={() => setSelectedCert(null)}>
-            <svg viewBox="0 0 24 24" fill="black" stroke="red" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-          </button>
+          {/* <button className="cert-overlay__close" onClick={() => setSelectedCert(null)}> */}
+
+            <button class="button" onClick={() => setSelectedCert(null)}>
+              <span class="X"></span>
+              <span class="Y"></span>
+              <div class="close">Close</div>
+            </button>
+
+          {/* </button> */}
           <div className="cert-overlay__content" onClick={(e) => e.stopPropagation()}>
             <img src={selectedCert.url} alt={selectedCert.title} className="cert-overlay__img" />
             <div className="cert-overlay__details">

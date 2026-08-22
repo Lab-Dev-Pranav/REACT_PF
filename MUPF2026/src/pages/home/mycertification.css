@@ -353,16 +353,68 @@
       z-index: 10000;
 }
 
-.cert-overlay__close:hover {
+/* .cert-overlay__close:hover {
       background: #38b1fd;
       transform: rotate(90deg);
       border-color: #4c38fd;
+} */
+
+
+.button {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+  width: 4em;
+  height: 4em;
+  border: none;
+  background: rgba(51, 46, 47, 0.479);
+  border-radius: 5px;
+  transition: background 0.5s;
+        z-index: 10000;
 }
 
-.cert-overlay__close svg {
-      width: 24px;
-      height: 24px;
+.X {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 1.5px;
+  background-color: rgb(255, 255, 255);
+  transform: translateX(-50%) rotate(45deg);
 }
+
+.Y {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 1.5px;
+  background-color: #fff;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.close {
+  position: absolute;
+  display: flex;
+  padding: 0.8rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+  top: -70%;
+  left: 50%;
+  width: 3em;
+  height: 1.7em;
+  font-size: 12px;
+  background-color: rgb(19, 22, 24);
+  color: rgb(187, 229, 236);
+  border: none;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+}
+
 
 .cert-overlay__content {
       position: relative;
